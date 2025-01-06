@@ -156,4 +156,26 @@ window.addEventListener('load', createConfetti);
 
 document.addEventListener("DOMContentLoaded", () => {
  
+ 
+document.querySelector(".contact-form").addEventListener("submit", async function(event) {
+    event.preventDefault(); // Elak reload page
+
+    let formData = new FormData(this);
+
+    let response = await fetch("https://formspree.io/f/mlddopnb", {
+        method: "POST",
+        body: formData,
+        headers: {
+            "Accept": "application/json"
+        }
+    });
+
+    if (response.ok) {
+        alert("Message sent successfully!");
+        this.reset();
+    } else {
+        alert("There was an error sending your message.");
+    }
+});
+
 
