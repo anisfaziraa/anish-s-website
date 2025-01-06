@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anis Fazira's Personal Website">
+    <title>anish's website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+    
+	<style>
+	
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #ff6ec7;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Pacifico', sans-serif;
+            font-size: 3rem;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: #333;
+            padding: 10px;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6ec7;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .zoom-in {
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .image-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Smooth Scroll Styles */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hover Effects */
+        .section:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+		
+    </style>
+</head>
+
+<body>
+
+
+<!-- Audio Player -->
+<audio id="background-audio" controls autoplay loop>
+    <source src="instrumental.mp3" type="audio/mp3">
+</audio>
+
+	
+<!-- Welcome Section -->
+<section class="welcome" id="welcome">
+    <div class="welcome-content">
+        <!-- Glowing Heading -->
+        <h1>✨ Welcome to My Website ✨</h1>
+        
+        <!-- Dynamic Typing Text -->
+        <p id="dynamic-text">Discover more about me here! 🦋</p>
+        
+        <!-- Emojis with Individual Effects -->
+        <div class="emojis">
+            <!-- Emoji 1: 💖 -->
+            <span class="emoji" id="love">💖</span>
+            
+            <!-- Emoji 2: 🎀 -->
+            <span class="emoji" id="ribbon">🎀</span>
+            
+            <!-- Emoji 3: 📚 -->
+            <span class="emoji" id="books">📚</span>
+        </div>
+    </div>
+</section>
+
+
+<!-- Navigation Section -->
+<nav>
+    <ul>
+        <li><a href="#home" class="scroll-link"><span class="emoji">🏠</span> Home</a></li>
+        <li><a href="#about" class="scroll-link"><span class="emoji">🦸‍♀️</span> About Me</a></li>
+        <li><a href="#education" class="scroll-link"><span class="emoji">🎓</span> Education</a></li>
+        <li><a href="#friends" class="scroll-link"><span class="emoji">👫</span> Friends</a></li>
+        <li><a href="#favorites" class="scroll-link"><span class="emoji">❤️</span> Favorites</a></li>
+        <li><a href="#contact" class="scroll-link"><span class="emoji">🙋</span> Contact Me</a></li>
+    </ul>
+</nav>
+
+
+<!-- Home Section -->
+<section id="home" class="home">
+    <div id="clock" class="live-clock" title="Hover me for a greeting!"></div>
+    <div class="home-content">
+        <h2>Hi! I'm Anis Fazira <span class="emoji-hover">👋</span></h2>
+        <p>I'm a student at UiTM Rembau currently pursuing a Diploma in Information Management. 
+           This website was created as part of my assignment for IMD318, and I am truly proud to share it with you.</p>
+        <p>On the right is a special photo of my classmates and me alongside our IMD318 lecturer, 
+           Sir Aiman Mudzafar Bin Mohamad Khairi, who has been a guiding light throughout this journey 😎</p>
+        <p>This is my very first website, and it holds a special place in my heart. 
+           I hope you enjoy exploring it as much as I enjoyed creating it! 🎉</p>
+        <a href="#about" class="btn">Discover More</a>
+    </div>
+    <div class="home-image">
+        <img src="images/gambar57.jpg" alt="gambar 57">
+    </div>
+</section>
+
+
+<!-- About Me Section -->
+ <section id="about" class="section fade-in">
+    <h2>About Me 😇 </h2>
+    <div class="about-container">
+        <div class="about-img-container">
+            <img src="images/gambar4.jpg" alt="Nur Anis Fazira" class="about-img">
+    </div>
+    <div class="about-text">
+            <p><strong>Name:</strong> Nur Anis Fazira Binti Roslan</p>
+            <p><strong>Student ID:</strong> 2022859596</p>
+            <p><strong>Class:</strong> N5CDIM1105F</p>
+            <p><strong>Date of Birth:</strong> 20 January 2004</p>
+            <p><strong>Birthplace:</strong> Klinik Pakar Wanita Rekha, Seremban, Negeri Sembilan</p>
+            <p><strong>Hobbies:</strong> Listening to music, watching movies, and hanging out with friends</p>
+            <p><strong>Family:</strong> I am the youngest of 6 siblings.</p>
+    </div>
+</section>
+
+
+<!-- Education Section -->
+<section id="education" class="section slide-in">
+    <h2>Education 🎓</h2>
+    <div class="education-images">
+        <div class="school">
+            <h3>Primary School 📚</h3>
+            <figure>
+                <img src="images/gambar54.jpg" alt="gambar 54">
+                <figcaption>SK SEREMBAN 2B</figcaption>
+            </figure>
+            <p class="caption-below">UPSR: 2016</p>
+        </div>
+        <div class="school">
+            <h3>Secondary School 🏫</h3>
+            <figure>
+                <img src="images/gambar55.jpg" alt="gambar 55">
+                <figcaption>SMK SEREMBAN 2</figcaption>
+            </figure>
+            <p class="caption-below">SPM: 2022</p>
+        </div>
+        <div class="school">
+            <h3>University 🏛️</h3>
+            <figure>
+                <img src="images/gambar56.jpg" alt="gambar 56">
+                <figcaption>UiTM REMBAU</figcaption>
+            </figure>
+            <p class="caption-below">DIPLOMA: 2022-2025</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Friend Section -->
+  <section id="friends">
+    <div class="friends-title">Friends <span class="emoji-heartbeat">🧸</span></div>
+    
+    <!-- High School Friends Section -->
+    <div class="friends-section">
+        <h3 class="section-title friends-hover-effect">High School Friends 👩‍🎓</h3>
+        <p class="section-description">This is my high school friends, and we have been friends for 8 years. Through all the ups and downs, 
+        we've shared countless memories, laughed until our stomachs hurt, and supported each other every step of the way. It is incredible how time flies, 
+        but the bond we have only grows stronger. Grateful for every moment we've spent together and looking forward to many more!</p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/gambar33.jpg" alt="gambar 33">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar34.jpg" alt="gambar 34">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar35.jpg" alt="gambar 35">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar36.jpg" alt="gambar 36">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar37.jpg" alt="gambar 37">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar38.jpg" alt="gambar 38">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar39.jpg" alt="gambar 39">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar40.jpg" alt="gambar 40">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar41.jpg" alt="gambar 41">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar42.jpg" alt="gambar 42">
+            </div>
+        </div>
+    </div>
+
+    <!-- University Friends Section -->
+    <div class="friends-section">
+        <h3 class="section-title friends-hover-effect">University Friends 🎓</h3>
+        <p class="section-description">This is my friends at UiTM Rembau. They're my classmates, and I started getting close to them during Semester 3. 
+        Honestly, I'm so glad to met them because they’ve made this journey so much more meaningful. I really hope that even after we graduate with our diplomas, 
+        we’ll stay friends and keep creating more memories together.</p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/gambar44.jpg" alt="gambar 44">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar45.jpg" alt="gambar 45">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar46.jpg" alt="gambar 46">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar47.jpg" alt="gambar 47">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar48.jpg" alt="gambar 48">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar49.jpg" alt="gambar 49">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar50.jpg" alt="gambar 50">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar51.jpg" alt="gambar 51">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar52.jpg" alt="gambar 52">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar53.jpg" alt="gambar 53">
+            </div>
+        </div>
+</section>
+
+
+<!-- Favorites Section -->
+  <section id="favorites">
+    <div class="favorites-title">My Favorites <span class="emoji-heartbeat">⭐</span></div>
+
+    <!-- Food Category -->
+    <div class="favorites-category">
+        <h3><span class="emoji">🍴</span> Food</h3>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/gambar21.jpg" alt="gambar 21">
+                <div class="caption">Nasi Kandar Ayam Madu</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar24.jpg" alt="gambar 24">
+                <div class="caption">Crispy Korean Burger</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar22.jpg" alt="gambar 22">
+                <div class="caption">Nasi Kerabu</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar26.jpg" alt="gambar 26">
+                <div class="caption">Nasi Ayam Gepuk</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar8.jpg" alt="gambar 8">
+                <div class="caption">Gulai Ayam Masak Lemak</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drinks Category -->
+    <div class="favorites-category">
+        <h3><span class="emoji">🥤</span> Drinks</h3>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/gambar29.jpg" alt="Gambar 29">
+                <div class="caption">Zus Coffee's Creme Cheese Green Tea</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar25.jpg" alt="Gambar 25">
+                <div class="caption">Boost's Cookies & Cream</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar23.jpg" alt="Gambar 23">
+                <div class="caption">Mixue's Ice Cream</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar19.jpg" alt="Gambar 19">
+                <div class="caption">Mixue's Drinks</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar28.jpg" alt="Gambar 28">
+                <div class="caption">Coconut Ice Cream</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dream Places Category -->
+    <div class="favorites-category">
+        <h3><span class="emoji">✈️</span> Dream Places</h3>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/gambar11.jpg" alt="gambar 11">
+                <div class="caption">Mount Fuji, Japan</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar27.jpg" alt="gambar 27">
+                <div class="caption">Maldives</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar30.jpg" alt="gambar 30">
+                <div class="caption">Mount Bromo, Indonesia</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar31.jpg" alt="gambar 31">
+                <div class="caption">Nami Island, Korea</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gambar32.jpg" alt="gambar 32">
+                <div class="caption">London</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Category -->
+    <div class="favorites-category">
+        <h3><span class="emoji">🎵</span> Songs</h3>
+        <div class="music-gallery">
+            <div class="music-item">
+                <p class="music-title">1. Anugerah Terindah - Andmesh Kamaleng</p>
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/o25_Tn8BnFM" frameborder="0" allowfullscreen></iframe>
+                <audio controls>
+                    <source src="anugerah.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="music-item">
+                <p class="music-title">2. Rahsia Tuhan - Noh Salleh</p>
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/NIDh_hqRbLI" frameborder="0" allowfullscreen></iframe>
+				 <audio controls>
+                    <source src="rahsia.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="music-item">
+                <p class="music-title">3. Seasons - Wave To Earth</p>
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/aMX2JOzKoDY" frameborder="0" allowfullscreen></iframe>
+                <audio controls>
+                    <source src="seasons.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="music-item">
+                <p class="music-title">4. Blue - Yung Kai</p>
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/bGc5lGxzMQw" frameborder="0" allowfullscreen></iframe>
+                <audio controls>
+                    <source src="blue.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="music-item">
+                <p class="music-title">5. A Piece Of You - Nathaniel Constantin</p>
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/XQVx5Koj55U" frameborder="0" allowfullscreen></iframe>
+				 <audio controls>
+                    <source src="piece.mp3" type="audio/mp3">
+                </audio>
+            </div>
+			 <div class="music-item">
+                <p class="music-title">6. Atlantis - Seafret</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UrriF1AvgLY?si=hjSsqDdAEUnJK2nI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				 <audio controls>
+                    <source src="atlantis.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+    </div>
+	
+    <!-- Recipes Category -->
+    <div class="favorites-category">
+        <h3><span class="emoji">🍽️</span> Recipes</h3>
+        <p class="section-description">Discover my favorite recipes, crafted to be quick, easy, and absolutely delicious! 🤩</p>
+    </div>
+
+    <!-- Additional Images -->
+    <div class="additional-images">
+	
+    <!-- Buttermilk Chicken -->
+    <div class="image-item">
+        <a href="resepi_ayam.pdf" class="download-btn" download>Download PDF here for Buttermilk Chicken</a>
+        <img src="images/buttermilk.jpg" alt="Buttermilk Chicken">
+    </div>
+
+    <!-- Spaghetti Carbonara -->
+    <div class="image-item">
+        <a href="carbo.pdf" class="download-btn" download>Download PDF here for Spaghetti Carbonara</a>
+        <img src="images/carbo.jpg" alt="Spaghetti Carbonara">
+    </div>
+</div>
+</section>
+
+	
+<!-- Contact Me -->
+<section id="contact" class="zoom-in">
+    <h2>Contact Me</h2>
+    <div class="contact-form-container">
+        <form action="your-server-endpoint" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name<span class="emoji">😊</span></label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email<span class="emoji">📧</span></label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message<span class="emoji">✍️</span></label>
+                <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message <span class="emoji">💌</span></button>
+        </form>
+    </div>
+    <p>If you'd like to get in touch, feel free to contact me through:</p>
+    <ul>
+        <li>Email: <a href="mailto:anisfazira85@yahoo.com">anisfazira85@yahoo.com</a></li>
+        <li>Phone: <a href="tel:0139053280">013-9053280</a></li>
+    </ul>
+</section>
+
+
+<section class="interactive-quotes">
+    <h2>Surprise !</h2>
+    <p class="caption">This quote is for you, a reminder to lift your spirits and inspire you to keep moving forward 💖</p>
+    <div class="quotes-container">
+        <div class="quote-box">
+            <p class="quote">"The only way to do great work is to love what you do." – Steve Jobs</p>
+        </div>
+        <div class="quote-box">
+            <p class="quote">"The best way to predict the future is to create it." – Abraham Lincoln</p>
+        </div>
+        <div class="quote-box">
+            <p class="quote">"Believe you can and you're halfway there." – Theodore Roosevelt</p>
+        </div>
+        <div class="quote-box">
+            <p class="quote">"It always seems impossible until it’s done." – Nelson Mandela</p>
+        </div>
+        <div class="quote-box">
+            <p class="quote">"The future belongs to those who believe in the beauty of their dreams." – Eleanor Roosevelt</p>
+        </div>
+    </div>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container"></div>
+</section>
+
+
+<!-- Footer Section -->
+    <footer>
+    <p>&copy; 2024 | Design by<span class="hover-effect">Anis Fazira</span>. All rights reserved. 🌟</p>
+    </footer>
+	
+	<div class="cursor"></div>
+
+	
+<script>
+
+// --- Smooth Scrolling for Links ---
+document.querySelectorAll('.scroll-link').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = e.currentTarget.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
+
+// --- Live Clock Function ---
+function updateClock() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    const timeString = `${hours}:${minutes}:${seconds}`;
+
+    const clockElement = document.getElementById('clock');
+    clockElement.textContent = timeString;
+
+    // Add Messages
+    const greeting =
+        hours < 12
+            ? "Good Morning! 🌞"
+            : hours < 18
+            ? "Good Afternoon! ☀️"
+            : "Good Evening! 🌙";
+
+    clockElement.setAttribute("title", greeting); 
+}
+
+setInterval(updateClock, 1000);
+updateClock(); 
+
+// --- Emoji Hover Effect ---
+const emojis = document.querySelectorAll('.emojis span');
+
+emojis.forEach(emoji => {
+  emoji.addEventListener('mouseenter', () => {
+    emoji.classList.add('hovered');
+  });
+
+  emoji.addEventListener('mouseleave', () => {
+    emoji.classList.remove('hovered');
+  });
+});
+
+// --- Specific Emoji Hover Animations ---
+const loveEmoji = document.getElementById("love");
+const ribbonEmoji = document.getElementById("ribbon");
+const booksEmoji = document.getElementById("books");
+
+loveEmoji.addEventListener("mouseenter", () => {
+    loveEmoji.classList.add("heartbeat");
+    loveEmoji.style.transform = "scale(1.3)";
+    loveEmoji.style.color = "#ccff66"; // Change color on hover
+});
+
+loveEmoji.addEventListener("mouseleave", () => {
+    loveEmoji.classList.remove("heartbeat");
+    loveEmoji.style.transform = "scale(1)";
+    loveEmoji.style.color = ""; // Reset color
+});
+
+ribbonEmoji.addEventListener("mouseenter", () => {
+    ribbonEmoji.style.transform = "rotate(360deg)";
+    ribbonEmoji.style.color = "#ff9999"; // Change color on hover
+});
+
+ribbonEmoji.addEventListener("mouseleave", () => {
+    ribbonEmoji.style.transform = "rotate(0deg)";
+    ribbonEmoji.style.color = ""; // Reset color
+});
+
+booksEmoji.addEventListener("mouseenter", () => {
+    booksEmoji.style.transform = "rotate(15deg)";
+    booksEmoji.style.color = "#66ffcc"; // Change color on hover
+});
+
+booksEmoji.addEventListener("mouseleave", () => {
+    booksEmoji.style.transform = "rotate(0deg)";
+    booksEmoji.style.color = ""; // Reset color
+});
+
+// --- Simple Form Validation ---
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (!name || !email || !message) {
+        e.preventDefault();
+        alert("Please fill in all the fields!");
+    }
+});
+
+// --- Intersection Observer for Animations ---
+const elements = document.querySelectorAll(".fade-in, .slide-in");
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationPlayState = "running";
+                observer.unobserve(entry.target);
+            }
+        });
+    },
+    { threshold: 0.1 }
+);
+
+elements.forEach((el) => {
+    observer.observe(el);
+});
+
+// --- Emoji Hover Effect (for scaling) ---
+document.querySelectorAll(".emojis span").forEach((emoji) => {
+    emoji.addEventListener("mouseover", () => {
+        emoji.style.transform = "scale(1.5)";
+        emoji.style.transition = "transform 0.3s ease";
+    });
+    emoji.addEventListener("mouseout", () => {
+        emoji.style.transform = "scale(1)";
+    });
+});
+
+// --- Confetti Effect ---
+function createConfetti() {
+    const confettiContainer = document.querySelector('.confetti-container');
+    const numberOfConfetti = 100; // Number of confetti particles
+
+    for (let i = 0; i < numberOfConfetti; i++) {
+        const confetti = document.createElement('div');
+        confetti.classList.add('confetti');
+
+        // Randomize the left position and size of each confetti
+        const randomX = Math.random(); // Random horizontal position
+        const randomSize = Math.random() * (15 - 5) + 5; // Random size between 5 and 15px
+        const randomDelay = Math.random() * 2; // Random delay for animation
+
+        // Apply random properties to confetti
+        confetti.style.setProperty('--confetti-random-x', randomX);
+        confetti.style.setProperty('width', `${randomSize}px`);
+        confetti.style.setProperty('height', `${randomSize}px`);
+        confetti.style.animationDelay = `${randomDelay}s`;
+
+        // Append confetti to the container
+        confettiContainer.appendChild(confetti);
+    }
+}
+
+// Initialize confetti on page load
+window.addEventListener('load', createConfetti);
+
+document.addEventListener("DOMContentLoaded", () => {
+   
+}
+);
+
+ </script>
+ 
+</body>
+</html>

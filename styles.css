@@ -1,0 +1,1954 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to top, #ffffff 0%, #ff3399 100%);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    animation: fade-in 2s ease-in;
+}
+
+/* Header Title */
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.8rem;
+}
+
+/* Header Paragraph */
+header p {
+    font-size: 1.1rem;
+}
+
+/* Keyframe Animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Section Styling */
+section {
+    padding: 50px 20px;
+    margin-bottom: 30px;
+}
+
+/* Individual Section Backgrounds */
+#about {
+    background-color: #f4f4f4;
+}
+
+#education {
+    background-color: #e3e3e3;
+}
+
+#friends {
+    background-color: #d1f7e4;
+}
+
+#favorites {
+    background-color: #f0f0f0;
+}
+
+#contact {
+    background-color: #dfe7fd;
+}
+
+/* Animation Keyframes */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce-in {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fade-in 2s ease;
+}
+
+.slide-in {
+    animation: slide-in 1.5s ease;
+}
+
+.bounce-in {
+    animation: bounce-in 2s ease;
+}
+
+.zoom-in {
+    animation: zoom-in 2s ease;
+}
+
+
+/* Audio Player */
+#background-audio {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;  
+    width: 100px; 
+    height: 40px; 
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect on the audio player */
+#background-audio:hover {
+    transform: scale(1.1) rotate(5deg);  
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.7);  
+    background-color: rgba(255, 105, 180, 0.2);  
+}
+
+/* Glowing Animation */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 15px rgba(255, 105, 180, 0.3), 0 0 25px rgba(255, 105, 180, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(255, 105, 180, 0.7), 0 0 35px rgba(255, 105, 180, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(255, 105, 180, 0.3), 0 0 25px rgba(255, 105, 180, 0.5);
+    }
+}
+
+/* Play Button Glow on Hover */
+#background-audio:hover::-webkit-media-controls-play-button {
+    background-color: #ff66b2;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 102, 178, 0.7);
+}
+
+/* Customize Volume Slider */
+#background-audio::-webkit-media-controls-volume-slider {
+    background-color: #ff66b2;
+}
+
+/* Glow effect on hover */
+#background-audio:hover {
+    animation: glow 1.5s ease-in-out infinite;
+}
+
+/* Space */
+body {
+    padding-top: 50px;
+}
+
+
+/* Welcome Section */
+.welcome {
+    background: linear-gradient(to bottom, #6600cc 0%, #9900cc 100%);
+    color: white;
+    text-align: center;
+    padding: 2px 2px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+}
+
+/* Welcome Content */
+.welcome-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Welcome Heading */
+.welcome h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+	color: white;
+    animation: glowText 2s infinite alternate;
+    transition: color 0.3s ease; text-shadow 0.3s ease;
+}
+
+/* Glowing Text Effect */
+@keyframes glowText {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff758c, 0 0 30px #ff758c, 0 0 40px #ff7eb3;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff758c, 0 0 40px #ff7eb3, 0 0 50px #ff7eb3;
+    }
+}
+
+.welcome h1:hover {
+    color: black;
+    text-shadow: 0 0 25px #ffb3ff, 0 0 35px #cc99ff, 0 0 45px #9900cc;
+}
+
+/* Keyframes for Heartbeat */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Dynamic Typing Text */
+#welcome #dynamic-text {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    animation: typing 3s steps(30, end) infinite, blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Typing Animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Blinking Cursor */
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: white;
+    }
+}
+
+/* Emojis Styling */
+.emojis {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Emojis Animation */
+.emojis span {
+    font-size: 2.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Heartbeat Effect for 💖 Emoji */
+.heartbeat {
+    animation: heartbeat 1s infinite ease-in-out;
+}
+
+/* Rotate Effect for 🎀 Emoji */
+.rotate-reben {
+    transition: transform 1s ease-in-out;
+}
+
+/* Rotate Effect for 📚 Emoji */
+.rotate-buku {
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Keyframes for Heartbeat */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Background Animation */
+.welcome::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #ff7eb3, transparent 50%);
+    z-index: 1;
+    animation: moveBackground 6s infinite alternate ease-in-out;
+}
+
+/* Moving Background */
+@keyframes moveBackground {
+    0% {
+        transform: scale(1) translate(-20%, -20%);
+    }
+    100% {
+        transform: scale(1.5) translate(10%, 10%);
+    }
+}
+
+
+/* Navigation Bar */
+nav {
+    background: #333; 
+    margin: 0;
+    padding: 15px 0;
+    position: relative;
+    z-index: 2; 
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* border or spacing below the navbar to create separation */
+.nav-white-bg {
+    background-color: #fff;
+    height: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Navigation Items */
+nav ul li {
+    margin: 0 20px; 
+}
+
+/* Navigation Links */
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: #fff; 
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Glow Effect on Hover */
+nav ul li a:hover {
+    color: #ff80cc; 
+    text-shadow: 0 0 10px #ff80cc, 0 0 20px #ff80cc; 
+}
+
+/* Individual Glow Colors */
+nav ul li:nth-child(1) a:hover {
+    color: #ff6347;
+    text-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347;
+}
+
+nav ul li:nth-child(2) a:hover {
+    color: #ffd700;
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+}
+
+nav ul li:nth-child(3) a:hover {
+    color: #4caf50;
+    text-shadow: 0 0 10px #4caf50, 0 0 20px #4caf50;
+}
+
+nav ul li:nth-child(4) a:hover {
+    color: #00bcd4;
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+}
+
+nav ul li:nth-child(5) a:hover {
+    color: #ff1493; /* Deep Pink */
+    text-shadow: 0 0 8px #ff1493;
+}
+
+nav ul li:nth-child(6) a:hover {
+    color: #1e90ff;
+    text-shadow: 0 0 8px #1e90ff;
+}
+
+/* Emoji Effects on Hover */
+nav ul li a .emoji {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Different Movement Effects */
+nav ul li:nth-child(1) a:hover .emoji {
+    animation: bounce 1s infinite;
+}
+
+nav ul li:nth-child(2) a:hover .emoji {
+    animation: rotate 1s infinite linear;
+}
+
+nav ul li:nth-child(3) a:hover .emoji {
+    animation: shake 0.8s infinite;
+}
+
+nav ul li:nth-child(4) a:hover .emoji {
+    animation: wiggle 0.8s infinite;
+}
+
+nav ul li:nth-child(5) a:hover .emoji {
+    animation: slide 1s infinite;
+}
+
+nav ul li:nth-child(6) a:hover .emoji {
+    animation: bounceIn 0.8s infinite;
+}
+
+/* Keyframes for Emoji Effects */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(-15deg); }
+}
+
+@keyframes slide {
+    0% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    100% { transform: translateX(-5px); }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+
+/* Home Section */
+.home {
+    text-align: center; 
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #800080 0%, #ff66cc 100%);
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    animation: fadeIn 1.5s ease-out;
+	margin-top: 20px; 
+}
+
+/* white space or border at the top */
+.home:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: #fff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Paragraph */
+.home p {
+    font-size: 0.95rem;
+    margin-bottom: 35px;
+    color: #f1f1f1;
+}
+
+/* Button */
+.btn {
+    padding: 12px 30px;
+    background-color: #ff6ec7;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4699;
+    transform: scale(1.1);
+}
+
+/* Text */
+.home-content {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding-bottom: 20px;
+}
+
+/* Images */
+.home-image img {
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    margin-top: 20px; 
+    transition: filter 0.3s ease; 
+    animation: float 3s infinite ease-in-out; 
+}
+
+/* Hover for Images */
+.home-image img:hover {
+    transform: rotate(3deg) scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    filter: brightness(1.1); 
+}
+
+/* Emoji Hover Effect */
+.emoji-hover {
+    font-size: 1.5rem; 
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.emoji-hover:hover {
+    transform: rotate(30deg);
+}
+
+.live-clock { 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(to bottom, #800080 0%, #ff66cc 100%);;
+    background-size: 200% 200%;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    z-index: 10;
+    box-shadow: 0 0 15px rgba(128, 0, 128, 0.8), 0 0 25px rgba(255, 102, 204, 0.8);
+    text-align: center;
+    animation: moveGradient 3s infinite, fadeIn 1.5s ease-out;
+    letter-spacing: 2px;
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.live-clock:hover {
+    transform: scale(1.2) rotate(0deg);
+    box-shadow: 0 0 30px rgba(255, 51, 153, 1), 0 0 40px rgba(255, 102, 0, 1);
+    cursor: pointer;
+}
+
+
+/* About Me Section */
+#about {
+    background: linear-gradient(to bottom, #4d0066 0%, #ff4d94 100%);
+    color: white;
+    padding: 50px 20px;
+}
+
+/* Heading */
+#about h2 {
+    font-size: 40px;
+	font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white; 
+	text-shadow: 0 0 10px rgba(255, 110, 199, 0.7); 
+	animation: glowMove 1.5s ease-in-out infinite alternate; 
+}
+
+/* Hover Effect on Heading */
+#about h2:hover {
+    color: black;
+}
+
+/* Container for Image and Text */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+    margin-top: 30px;
+}
+
+/* Image Section */
+.about-img-container {
+    flex: 1 1 40%; 
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 450px; 
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-img:hover {
+    transform: scale(1.1); 
+}
+
+/* Text Section */
+.about-text {
+    flex: 1 1 50%; 
+    text-align: left;
+    font-size: 1.2rem;
+    color: white;
+    animation: fadeIn 1.5s ease-out; 
+    position: relative;
+}
+
+/* Paragraph Text */
+.about-text p {
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, letter-spacing 0.3s ease; 
+}
+
+.about-text p:hover {
+    transform: scale(1.05); 
+    letter-spacing: 1.5px; 
+}
+
+/* Fade-in effect for the entire section */
+.fade-in {
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Removed Slide-in Effect */
+
+/* Bounce-in effect */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Glow Effect */
+@keyframes glowEffect {
+    0% {
+        text-shadow: 0 0 5px #4d0066, 0 0 10px #4d0066, 0 0 15px #ff4d94;
+    }
+    100% {
+        text-shadow: 0 0 10px #ff4d94, 0 0 20px #ff4d94, 0 0 30px #4d0066;
+    }
+}
+
+/* Responsiveness for Smaller Screens */
+@media (max-width: 768px) {
+    /* Image and Text Container */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Image Container */
+    .about-img-container {
+        flex: 1 1 70%;
+        margin-bottom: 20px;
+    }
+
+    /* Text Container */
+    .about-text {
+        flex: 1 1 70%;
+        text-align: center;
+    }
+
+    /* Heading */
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    /* Image Size */
+    .about-img {
+        max-width: 350px; 
+    }
+}
+
+/* Staggered Paragraph Animation */
+.about-text p:nth-child(1) { animation-delay: 0.3s; }
+.about-text p:nth-child(2) { animation-delay: 0.6s; }
+.about-text p:nth-child(3) { animation-delay: 0.9s; }
+.about-text p:nth-child(4) { animation-delay: 1.2s; }
+.about-text p:nth-child(5) { animation-delay: 1.5s; }
+
+/* About Text Paragraphs Hover Effect */
+.about-text p {
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, letter-spacing 0.3s ease, color 0.3s ease;
+}
+
+.about-text p:hover {
+    transform: scale(1.05); 
+    letter-spacing: 1.5px; 
+}
+
+.about-text p:nth-child(1):hover { color: black; } 
+.about-text p:nth-child(2):hover { color: black; } 
+.about-text p:nth-child(3):hover { color: black; } 
+.about-text p:nth-child(4):hover { color: black; } 
+.about-text p:nth-child(5):hover { color: black; } 
+.about-text p:nth-child(6):hover { color: black; } 
+.about-text p:nth-child(7):hover { color: black; } 
+
+
+/* Education Section */
+#education {
+    padding: 40px;
+    background: linear-gradient(to bottom, #800080 0%, #ff80cc 100%); 
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading Text with Glow Effect */
+#education h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: glowMove 1.5s ease-in-out infinite alternate; 
+    color: black;
+}
+
+/* Glow Effect Animation */
+@keyframes glowEffect {
+    0% {
+        text-shadow: 0 0 10px #ff80cc, 0 0 20px #ff80cc, 0 0 30px #800080, 0 0 40px #800080;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff80cc, 0 0 30px #ff80cc, 0 0 40px #800080, 0 0 50px #ff80cc;
+    }
+}
+
+/* Hover effect on heading */
+#education h2:hover {
+    color: white;
+}
+
+/* Education Images Container */
+.education-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Image and Caption Styling */
+.school {
+    position: relative;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+}
+
+.school:hover {
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.school figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.school img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+/* Hover effect on images */
+.school img:hover {
+    transform: scale(1.1);
+}
+
+/* Caption inside image (appears when hovering over image) */
+.school figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white; 
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect on caption for each image */
+.school:nth-child(1):hover figcaption {
+    color: #ff66ff; 
+    text-shadow: 0 0 10px #ff66ff, 0 0 20px #ff66ff;
+}
+
+.school:nth-child(2):hover figcaption {
+    color: #ff6347; 
+    text-shadow: 0 0 10px #ff6347, 0 0 20px #ff6347;
+}
+
+.school:nth-child(3):hover figcaption {
+    color: #f5a623; 
+    text-shadow: 0 0 10px #f5a623, 0 0 20px #f5a623;
+}
+
+.school:hover figcaption {
+    transform: translateY(0); 
+}
+
+/* Caption below the image (always visible) */
+.school .caption-below {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-delay: 0.4s;
+}
+
+/* Hover effect on image to change color */
+.school:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .education-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .school {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Friends Section */
+#friends {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #660066 0%, #ff66b3 100%);
+    color: white;
+}
+
+.friends-title {
+    font-size:40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: black;
+    text-shadow: 0 0 10px rgba(255, 110, 199, 0.7); 
+	animation: glowMove 1.5s ease-in-out infinite alternate; 
+}
+
+/* Hover Effect for Friends Title */
+.friends-title:hover {
+    color: white; 
+}
+
+/* Glow Movement Animation */
+@keyframes glowMove {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 110, 199, 0.7), 0 0 20px rgba(255, 110, 199, 0.6), 0 0 30px rgba(255, 110, 199, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 110, 199, 0.9), 0 0 40px rgba(255, 110, 199, 0.8), 0 0 60px rgba(255, 110, 199, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 110, 199, 0.7), 0 0 20px rgba(255, 110, 199, 0.6), 0 0 30px rgba(255, 110, 199, 0.5);
+    }
+}
+
+/* Friends Category */
+.friends-category h3 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation: zoomIn 1s ease-in-out;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Friends Category */
+.friends-category h3:hover {
+    background-color: #ff6ec7;
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 110, 199, 0.7);
+    cursor: pointer;
+}
+
+/* Animation for Zoom In */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* High School and University Friends Titles */
+.friends-hover-effect {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: textEffect 1s ease-in-out;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.friends-hover-effect.high-school {
+    color: #660066; 
+}
+
+.friends-hover-effect.university {
+    color: #ff66b3; 
+}
+
+/* Hover Effect on Friends Titles */
+.friends-hover-effect:hover {
+    transform: scale(1.1);
+    text-shadow: 3px 3px 10px rgba(255, 110, 199, 0.7);
+    cursor: pointer;
+}
+
+/* Animation for Title (High School Friends & University Friends) */
+@keyframes textEffect {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* Favorites Section */
+#favorites {
+    overflow-x: hidden;
+}
+
+#favorites {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #000066 0%, #cc00cc 100%);
+	color: white;
+}
+
+/* Title for Favorites Section */
+.favorites-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: white;
+	text-shadow: 0 0 10px rgba(255, 110, 199, 0.7); 
+	animation: glowMove 1.5s ease-in-out infinite alternate; 
+}
+
+.favorites-title:hover {
+    color: black; 
+}
+
+/* Glow Movement Animation */
+@keyframes glowMove {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 110, 199, 0.7), 0 0 20px rgba(255, 110, 199, 0.6), 0 0 30px rgba(255, 110, 199, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 110, 199, 0.9), 0 0 40px rgba(255, 110, 199, 0.8), 0 0 60px rgba(255, 110, 199, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(255, 110, 199, 0.7), 0 0 20px rgba(255, 110, 199, 0.6), 0 0 30px rgba(255, 110, 199, 0.5);
+    }
+}
+
+/* Categories for Favorites Section */
+.favorites-category {
+    margin-bottom: 50px;
+}
+
+.favorites-category h3 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.favorites-category h3:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Gallery Styling */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+/* Caption Styling */
+.gallery-item .caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.gallery-item:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover Animation for Gallery Images */
+@keyframes hover-animation {
+    0% {
+        transform: scale(1) rotate(0deg) translateY(0);
+        filter: brightness(1);
+    }
+    50% {
+        transform: scale(1.1) rotate(5deg) translateY(-10px);
+        filter: brightness(1.1);
+    }
+    100% {
+        transform: scale(1.1) rotate(0deg) translateY(-10px);
+        filter: brightness(1.1);
+    }
+}
+
+.gallery-item img:hover {
+    animation: hover-animation 0.4s ease-in-out;
+}
+
+/* Wobble Effect for Drinks Category */
+.drinks .gallery-item img {
+    transition: transform 0.3s ease;
+}
+
+.drinks .gallery-item img:hover {
+    animation: wobble 0.6s ease;
+}
+
+/* Wobble Animation */
+@keyframes wobble {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Caption Transition on Hover */
+.gallery-item .caption {
+    font-size: 16px;
+    color: white;
+    opacity: 1;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.gallery-item:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Zoom-in Animation for Gallery Images */
+.gallery-item img {
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Bounce Animation for Category Title */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.favorites-category h3 {
+    animation: bounce 1s ease-in-out;
+}
+
+/* Hover Effects for Category Titles */
+.favorites-category h3 {
+    animation: zoomIn 1s ease-in-out;
+    font-size: 2rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.favorites-category h3:hover {
+    color: #ff6ec7;
+    transform: scale(1.1);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Emoji Rotating Effect */
+.emoji {
+    display: inline-block;
+    transition: transform 1s;
+}
+
+.emoji:hover {
+    transform: rotate(360deg); 
+}
+
+/* Heartbeat Animation for Emoji */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Heartbeat Effect on Hover */
+.emoji-heartbeat {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.emoji-heartbeat:hover {
+    animation: heartbeat 1s ease-in-out infinite;
+}
+
+/* Music Gallery Styling */
+.music-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.music-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.music-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ff6ec7;
+}
+
+iframe {
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+audio {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Fade-in Animation for Music Items */
+.music-item {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Uniform Style for Iframes */
+.music-item iframe {
+    width: 100%;
+    height: 200px;
+    max-width: 560px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@keyframes slideInRight {
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Recipes Section */
+#favorites {
+    padding: 50px 0; 
+    color: white;
+	font-size: 1.rem;
+}
+
+/* Additional Images Container */
+.additional-images {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 30px; 
+    margin-bottom: 30px; 
+    flex-wrap: wrap; 
+}
+
+/* Each Image and Button Item */
+.image-item {
+    width: 350px; 
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* Download Button */
+.download-btn {
+    display: block;
+    margin-bottom: 15px;
+    padding: 12px 18px;
+    background: linear-gradient(to bottom, #000066 0%, #cc00cc 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect for Download Button */
+.download-btn:hover {
+    background: linear-gradient(to bottom, #330066 0%, #ff3399 100%); 
+    transform: scale(1.1) rotate(5deg);  
+    box-shadow: 0 0 30px rgba(204, 0, 204, 0.8), 0 0 40px rgba(0, 0, 102, 0.6); 
+    animation: pulseGlow 1.5s infinite; 
+}
+
+/* Pulse effect */
+@keyframes pulseGlow {
+    0% {
+        transform: scale(1.1) rotate(5deg);
+        box-shadow: 0 0 30px rgba(204, 0, 204, 0.8), 0 0 40px rgba(0, 0, 102, 0.6);
+    }
+    50% {
+        transform: scale(1.15) rotate(-5deg); 
+        box-shadow: 0 0 50px rgba(204, 0, 204, 1), 0 0 70px rgba(0, 0, 102, 0.9);
+    }
+    100% {
+        transform: scale(1.1) rotate(5deg);
+        box-shadow: 0 0 30px rgba(204, 0, 204, 0.8), 0 0 40px rgba(0, 0, 102, 0.6);
+    }
+}
+
+/* Subtle animation */
+.download-btn {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Fade-in animation for button */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Image Styling */
+.image-item img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
+}
+
+.image-item img:hover {
+    filter: grayscale(50%); 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .additional-images {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .image-item {
+        width: 80%; 
+    }
+}
+
+
+/* Contact Me Section */
+#contact {
+    background: linear-gradient(to bottom, #4d0066 0%, #ff80b3 100%);
+    padding: 50px 20px;
+	padding-top: 50px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animating the Title */
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;  
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 1s ease-out forwards, pulseGlow 1s ease-in-out infinite;
+    transition: color 0.3s ease;
+}
+
+/* Hover animation for title */
+#contact h2:hover {
+    color: black;
+}
+
+/* Glow Effect */
+@keyframes glowEffect {
+    0% {
+        text-shadow: 0 0 5px #4d0066, 0 0 10px #4d0066, 0 0 15px #ff4d94; 
+    }
+    100% {
+        text-shadow: 0 0 10px #ff4d94, 0 0 20px #ff4d94, 0 0 30px #4d0066; 
+    }
+}
+
+/* Glow Pulse Animation */
+@keyframes pulseGlow {
+    0% {
+        text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 30px #ff66cc; 
+        opacity: 1;
+    }
+    50% {
+        text-shadow: 0 0 20px #ff66cc, 0 0 30px #ff66cc, 0 0 40px #ff66cc; 
+        opacity: 0.8;
+    }
+    100% {
+        text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 30px #ff66cc; 
+        opacity: 1;
+    }
+}
+
+/* Animating the Paragraph */
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #f7f7f7;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 1s ease-out forwards 0.5s;
+    transition: color 0.3s ease;
+}
+
+/* Hover animation for paragraph */
+#contact p:hover {
+    color: black;
+}
+
+/* Emojis Hover Effects */
+#contact .form-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-group label .emoji {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Emoji Effects on Hover */
+.form-group label .emoji:nth-child(1):hover { 
+    transform: rotate(20deg);
+    color: #ffcc00;  
+}
+
+.form-group label .emoji:nth-child(2):hover {
+    transform: scale(1.2);
+    color: #ff3399;  
+}
+
+.form-group label .emoji:nth-child(3):hover {
+    transform: translateX(10px) rotate(-15deg);
+    color: #ff66cc;  
+}
+
+/* Contact Form */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards 1s;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 1.5s;
+}
+
+/* Form input fields */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 98%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Focus effects on inputs */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #a6c1ee;
+    outline: none;
+    box-shadow: 0 0 8px rgba(166, 193, 238, 0.6);
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #fbc2eb;
+    color: black;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #a6c1ee;
+    transform: scale(1.05); 
+}
+
+/* Submit Button active effect */
+.submit-btn:active {
+    transform: scale(1); 
+}
+
+/* Responsive Contact Form */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animations */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Surprise Section */
+.interactive-quotes {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #660066 0%, #ff66cc 100%);
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards 1s;
+}
+
+/* Title for Quote Section */
+.interactive-quotes h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff66cc, 0 0 30px #ff66cc;
+    opacity: 0;
+    animation: titleFadeIn 2s ease-out forwards 1.5s, pulseGlow 2s ease-in-out infinite, colorSwitch 1s ease-in-out infinite;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Keyframe Animations */
+
+/* Fade In Effect for Title */
+@keyframes titleFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Glow Pulse Animation */
+@keyframes pulseGlow {
+    0% {
+        text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 30px #ff66cc;
+        opacity: 1;
+    }
+    50% {
+        text-shadow: 0 0 20px #ff66cc, 0 0 30px #ff66cc, 0 0 40px #ff66cc;
+        opacity: 0.8;
+    }
+    100% {
+        text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 30px #ff66cc;
+        opacity: 1;
+    }
+}
+
+/* Alternating Color Animation */
+@keyframes colorSwitch {
+    0% {
+        color: white;
+        text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 30px #ff66cc;
+    }
+    50% {
+        color: black;
+        text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 30px #ff66cc;
+    }
+    100% {
+        color: white;
+        text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 30px #ff66cc;
+    }
+}
+
+/* Text Below the Title */
+.interactive-quotes p {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Container for Quotes */
+.quotes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Styling for each Quote Box */
+.quote-box {
+    width: 250px;
+    height: 150px;
+    margin: 15px;
+    background: linear-gradient(to bottom, #660099 0%, #ff66cc 100%);
+    color: transparent;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    animation: glowEffect 1.5s infinite alternate;
+}
+
+/* Glow Effect */
+@keyframes glowEffect {
+    0% {
+        box-shadow: 0 0 15px #ff66cc, 0 0 25px #ff66cc, 0 0 35px #ff66cc;
+    }
+    100% {
+        box-shadow: 0 0 25px #ff66cc, 0 0 35px #ff66cc, 0 0 50px #ff66cc;
+    }
+}
+
+/* Hover Effect for Quote Box */
+.quote-box:hover {
+    background-color: #ff66cc;
+    transform: scale(1.05);
+}
+
+/* Show the Quote Text on Hover */
+.quote-box:hover .quote {
+    color: white;
+    opacity: 1;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Styling for the Quote Text */
+.quote {
+    font-size: 1rem;
+    font-style: italic;
+    opacity: 0; /* Initially hide quotes */
+    transition: opacity 0.3s ease;
+}
+
+/* Responsive on Mobile Devices */
+@media (max-width: 768px) {
+    .quotes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quote-box {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+/* Confetti Container */
+.confetti-container {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 98%;
+    height: 93%;
+    pointer-events: none;
+    z-index: 0;  
+}
+
+/* Confetti Style */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff66cc;
+    animation: confettiFall 2s infinite;
+    opacity: 0.8;
+    transform: rotate(45deg);
+}
+
+.confetti:nth-child(odd) {
+    background-color: #ff6699;
+}
+
+.confetti:nth-child(even) {
+    background-color: #66ccff;
+}
+
+/* Confetti Animation */
+@keyframes confettiFall {
+    0% {
+        top: -10%;
+        left: calc(100% * var(--confetti-random-x));
+        transform: rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        left: calc(100% * var(--confetti-random-x));
+        opacity: 0;
+    }
+}
+
+/* Fade in Effect for Title */
+@keyframes titleFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Footer */
+footer {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #333; 
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/* Hover effect */
+.hover-effect {
+    color: #fff; 
+    transition: color 0.3s ease, background 0.3s ease, text-shadow 0.3s ease; 
+    background-image: linear-gradient(to right, #ff00cc, #ff6347); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    text-fill-color: transparent; 
+    padding: 5px; /
+}
+
+/* Hover Effects for Text */
+.hover-effect:hover {
+    background-image: linear-gradient(to right, #ff6347, #ff00cc); 
+    color: #fff; 
+    text-shadow: 0 0 5px #ff6347, 0 0 10px #ff00cc, 0 0 15px #ff00cc; 
+}
+
+/* Hover Effects for Other Elements */
+footer a:hover {
+    color: #ff00cc; 
+    text-decoration: underline;
+    text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc, 0 0 30px #ff00cc; 
+}
+
+
